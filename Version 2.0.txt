@@ -1,0 +1,62 @@
+package br.com.excript;
+import java.util.Scanner;
+
+public class Aulas {
+	
+	public static void main(String[] args){
+		
+		Scanner in = new Scanner(System.in);
+		
+		System.out.println("Digite 1 para somar");
+		System.out.println("Digite 2 para subtrair");
+		System.out.println("Digite 3 para multiplicar");
+		System.out.println("Digite 4 para dividir");
+		System.out.println();
+		
+		int op = in.nextInt();
+		double num1, num2, soma, sub, multi, divi;
+		
+		System.out.println("Digite o primeiro valor: ");
+		num1 = in.nextDouble();
+		
+		System.out.println("Digite o segundo valor: ");
+		num2 = in.nextDouble();
+		
+		if(op == 1) {
+			
+			soma = num1 + num2;
+			System.out.print("A soma é: ");
+			System.out.println(soma);
+			
+		}else {
+			if(op == 2) {
+				
+				sub = num1 - num2;
+				System.out.print("A subtração é: ");
+				System.out.println(sub);
+				
+			}else {
+				if(op == 3) {
+					
+					multi = num1 * num2;
+					System.out.print("A multiplicação é: ");
+					System.out.println(multi);
+					
+				}else {
+					if(op == 4) {
+						
+						divi = num1 / num2;
+						System.out.print("A divisão é: ");
+						System.out.println(divi);
+						
+					}else {
+						
+						System.out.println("Operacão inválida");
+						
+					}
+				}
+			}
+		}
+	}
+	
+	}
